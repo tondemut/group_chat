@@ -1,0 +1,11 @@
+{
+  "name": "group_chat",
+  "version": "1.0.0",
+  "description": "A web socket chat app using Socket IO.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Tonderai Mutanda",
+  "license": "ISC"
+}
