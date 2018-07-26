@@ -8,17 +8,22 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.1.1/socket.io.js"></script>
     <link rel="stylesheet" href="style.css">
 
+    <link href="https://stackpath.bootstrapcdn.com/bootswatch/4.1.2/flatly/bootstrap.min.css" rel="stylesheet" integrity="sha384-dc511usETkt5R6evFzyWPo3GCQkG+8t+K2KZ9TUeGbisOmqJGXf4j8fLCRoK9r1N" crossorigin="anonymous">
+
 </head>
 <body>
     <div id="group-chat">
+        <h1 class="text-center">Group Chat</h1>
         <div id="chat-window">
             <div id="output">
+                <div id="feedback">
 
+                </div>
             </div>
         </div>
         <input type="text" placeholder="Handle" id="handle">
         <input type="text" placeholder="Message" id="message">
-        <button id="send">Send</button>
+        <button class="btn btn-primary" id="send">Send</button>
     </div>
 
     <script src="chat.js"></script>
