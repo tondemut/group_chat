@@ -1,6 +1,8 @@
 var express = require('express');
-// App Setup
+var socket = require('socket.io');
 
+
+// App Setup
 var app = express();
 var server = app.listen(4000, function(){
     console.log('listening to requests');
@@ -8,3 +10,15 @@ var server = app.listen(4000, function(){
 
 // Static files
 app.use(express.static('public'));
+
+// Socket setup
+var io = socket(server);
+
+io.on('connection', (socket) => {
+    console.log('made socket connection', socket.id);
+
+    socket.on('chat', function(data){
+        io.sockets.emit('chat', data);
+    });
+});
+ 
