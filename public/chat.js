@@ -1,5 +1,5 @@
 // Make the connection
-var socket = io.connect('http://localhost:4000');
+const socket = io.connect('http://localhost:4000');
 
 
 // Query DOM
